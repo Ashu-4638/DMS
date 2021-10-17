@@ -1,0 +1,2 @@
+student#grno#int#name#str#
+dept#depno#int#name#str#
