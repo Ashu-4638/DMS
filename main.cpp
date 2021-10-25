@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 #include "create.h"
 #include "insert.h"
+#include "drop.h"
 using namespace std;
 
 
@@ -65,6 +66,21 @@ int main()
             }
         }
         INSERT(values[2], values);
+    }
+    else if(query.find("drop") != -1)
+    {
+        string comm = "";
+        for (int i = 0; i < query.length(); i++)
+        {
+            if(query[i] == ' ' || query[i] == ';')
+            {
+                command.push_back(comm);
+                comm = "";
+                continue;
+            }
+            comm += query[i];
+        }
+        cout<<DROP(command[2]);
     }
     
     for(int i = 0; i < attributes.size(); i++)
