@@ -10,8 +10,10 @@ vector<string> HELP_TABLES()
     {
 
         getline(table_schema, tables);
+        cout<<tables<<endl;
         int loc =tables.find_first_of('#');
         tbs.push_back(tables.substr(0, loc));
     }
+    table_schema.close();
     return tbs;
 }

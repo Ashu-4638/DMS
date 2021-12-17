@@ -169,15 +169,15 @@ int main()
                 SELECT(tbl,"", command, "");
 
             }
-            for(int i = 0; i < attributes.size(); i++)
-            {
-                cout<<attributes[i].first<<" "<<attributes[i].second<<endl;
+            // for(int i = 0; i < attributes.size(); i++)
+            // {
+            //     cout<<attributes[i].first<<" "<<attributes[i].second<<endl;
 
-            }
-            for(int i = 0; i < values.size(); i++)
-            {
-                cout<<values[i]<<" ";
-            }
+            // }
+            // for(int i = 0; i < values.size(); i++)
+            // {
+            //     cout<<values[i]<<" ";
+            // }
 
 
     }

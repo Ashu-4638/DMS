@@ -11,8 +11,10 @@ void CREATE(string tablename,vector <pair<string, string>> attributes)
     
     for(int i = 0; i < attributes.size(); i++)
     {
+        cout<<attributes[i].first<<"#"<<attributes[i].second<<"#"<<endl;
         schema<<attributes[i].first<<"#"<<attributes[i].second<<"#";
     }
+   
     
     table.close();
     schema.close();

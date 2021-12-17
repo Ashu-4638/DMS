@@ -1,2 +1,1 @@
 student#grno#int#name#str#
-dept#grno#INT#name#STR#
